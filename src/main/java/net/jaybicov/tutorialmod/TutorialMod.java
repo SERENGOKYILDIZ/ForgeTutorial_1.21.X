@@ -1,6 +1,8 @@
 package net.jaybicov.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.jaybicov.tutorialmod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -33,7 +35,7 @@ public class TutorialMod
         MinecraftForge.EVENT_BUS.register(this);
 
 
-
+        ModItems.register(modEventBus); /// For Custom Items ()
 
 
         // Register the item to a creative tab
@@ -50,6 +52,13 @@ public class TutorialMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
+        /// For Custom Items: (We added our item into INGREDIENTS tab)
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS)
+        {
+            event.accept(ModItems.ALEXANDRITE);
+            //For Second item:
+            event.accept(ModItems.RAW_ALEXANDRITE);
+        }
 
     }
 
