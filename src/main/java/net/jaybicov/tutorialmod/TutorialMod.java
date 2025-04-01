@@ -1,6 +1,7 @@
 package net.jaybicov.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.jaybicov.tutorialmod.block.ModBlocks;
 import net.jaybicov.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -36,6 +37,7 @@ public class TutorialMod
 
 
         ModItems.register(modEventBus); /// For Custom Items ()
+        ModBlocks.register(modEventBus); /// For Custom Blocks ()
 
 
         // Register the item to a creative tab
@@ -52,7 +54,7 @@ public class TutorialMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        /// For Custom Items: (We added our item into INGREDIENTS tab)
+        /// For Custom Items: (We added our items into INGREDIENTS tab)
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS)
         {
             event.accept(ModItems.ALEXANDRITE);
@@ -60,6 +62,13 @@ public class TutorialMod
             event.accept(ModItems.RAW_ALEXANDRITE);
         }
 
+        /// For Custom Blocks: (We added our blocks into BUILDING_BLOCKS tab)
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
+        {
+            event.accept(ModBlocks.ALEXANDRITE_BLOCK);
+            //For Second block:
+            event.accept(ModBlocks.RAW_ALEXANDRITE_BLOCK);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
