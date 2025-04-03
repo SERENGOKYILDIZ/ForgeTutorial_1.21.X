@@ -3,5 +3,8 @@
   "item.tutorialmod.raw_alexandrite": "Ham Alexandrite",
 
   "block.tutorialmod.alexandrite_block": "Alexandrite Blok",
-  "block.tutorialmod.raw_alexandrite_block": "Ham Alexandrite Blok"
+  "block.tutorialmod.raw_alexandrite_block": "Ham Alexandrite Blok",
+
+  "creativetab.tutorialmod.alexandrite_items": "Alexandrite Malzemeleri",
+  "creativetab.tutorialmod.alexandrite_blocks": "Alexandrite Blokları"
 }

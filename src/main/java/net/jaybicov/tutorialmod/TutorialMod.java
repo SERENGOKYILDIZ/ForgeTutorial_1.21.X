@@ -2,6 +2,7 @@ package net.jaybicov.tutorialmod;
 
 import com.mojang.logging.LogUtils;
 import net.jaybicov.tutorialmod.block.ModBlocks;
+import net.jaybicov.tutorialmod.item.ModCreativeModeTabs;
 import net.jaybicov.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -35,7 +36,7 @@ public class TutorialMod
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
-
+        ModCreativeModeTabs.register(modEventBus); /// For Custom Creative Mode Tab ()
         ModItems.register(modEventBus); /// For Custom Items ()
         ModBlocks.register(modEventBus); /// For Custom Blocks ()
 
