@@ -55,6 +55,8 @@ public class TutorialMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
+        //////////////-> They already have their own CreativeModeTabs
+        /*
         /// For Custom Items: (We added our items into INGREDIENTS tab)
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS)
         {
@@ -70,6 +72,7 @@ public class TutorialMod
             //For Second block:
             event.accept(ModBlocks.RAW_ALEXANDRITE_BLOCK);
         }
+        */
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

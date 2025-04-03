@@ -5,6 +5,9 @@
   "block.tutorialmod.alexandrite_block": "Alexandrite Blok",
   "block.tutorialmod.raw_alexandrite_block": "Ham Alexandrite Blok",
 
+  "block.tutorialmod.alexandrite_ore": "Alexandrite Madeni",
+  "block.tutorialmod.alexandrite_deepslate_ore": "Kayrak Taşında Alexandrite Madeni",
+
   "creativetab.tutorialmod.alexandrite_items": "Alexandrite Malzemeleri",
   "creativetab.tutorialmod.alexandrite_blocks": "Alexandrite Blokları"
 }
