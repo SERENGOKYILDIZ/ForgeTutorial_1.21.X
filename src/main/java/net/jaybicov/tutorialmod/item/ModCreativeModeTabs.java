@@ -24,6 +24,8 @@ public class ModCreativeModeTabs {
                                 {
                                     pOutput.accept(ModItems.ALEXANDRITE.get()); //We added ALEXANDRITE in our tab.
                                     pOutput.accept(ModItems.RAW_ALEXANDRITE.get()); //We added RAW ALEXANDRITE in our tab.
+
+                                    pOutput.accept(ModItems.CHISEL.get());
                                 })
                             .build());
 
