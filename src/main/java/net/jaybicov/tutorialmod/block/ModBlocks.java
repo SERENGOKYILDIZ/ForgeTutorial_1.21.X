@@ -1,6 +1,7 @@
 package net.jaybicov.tutorialmod.block;
 
 import net.jaybicov.tutorialmod.TutorialMod;
+import net.jaybicov.tutorialmod.block.custom.MagicBlock;
 import net.jaybicov.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -24,27 +25,40 @@ public class ModBlocks {
     public static final RegistryObject<Block> ALEXANDRITE_BLOCK = registerBlock("alexandrite_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
-                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.AMETHYST)
+            ));
 
     //For Second block:
     public static final RegistryObject<Block> RAW_ALEXANDRITE_BLOCK = registerBlock("raw_alexandrite_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f)));
+                    .strength(3f)
+            ));
+
+
 
     public static final RegistryObject<Block> ALEXANDRITE_ORE = registerBlock("alexandrite_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
                     BlockBehaviour.Properties.of()
                     .strength(4f)
-                    .requiresCorrectToolForDrops()));
+                    .requiresCorrectToolForDrops()
+            ));
 
-    //For Second block:
     public static final RegistryObject<Block> ALEXANDRITE_DEEPSLATE_ORE = registerBlock("alexandrite_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(3, 6),
                     BlockBehaviour.Properties.of()
                     .strength(5f)
                     .requiresCorrectToolForDrops()
-                    .sound(SoundType.DEEPSLATE)));
+                    .sound(SoundType.DEEPSLATE)
+            ));
 
+
+    //For Advanced block:
+    public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of()
+                    .strength(2f)
+                    .sound(SoundType.AMETHYST)
+            ));
 
 
 
