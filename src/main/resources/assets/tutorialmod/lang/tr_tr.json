@@ -14,5 +14,12 @@
   "item.tutorialmod.chisel": "Keski",
   "block.tutorialmod.magic_block": "Büyülü Blok",
   "item.tutorialmod.kohlrabi": "Kohlrabi",
-  "item.tutorialmod.aurora_ashes": "Aurora Külleri"
+  "item.tutorialmod.aurora_ashes": "Aurora Külleri",
+
+  "tooltip.tutorialmod.magic_block.tooltip": "Bu Blok oldukça §9BÜYÜLÜ§r",
+
+  "tooltip.tutorialmod.chisel": "Daha fazla bilgi için §eShift§r tuşuna basın!",
+  "tooltip.tutorialmod.chisel.shift_down": "Bu Alet belirli blokları değiştirir",
+
+  "tooltip.tutorialmod.kohlrabi": "Tadı harika!!"
 }

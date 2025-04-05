@@ -14,5 +14,14 @@
   "item.tutorialmod.chisel": "Chisel",
   "block.tutorialmod.magic_block": "Block of Magic",
   "item.tutorialmod.kohlrabi": "Kohlrabi",
-  "item.tutorialmod.aurora_ashes": "Aurora Ashes"
+  "item.tutorialmod.aurora_ashes": "Aurora Ashes",
+
+  "COMMENT!!!1": "We can use it in paragraph usage with the § sign.",
+  "COMMENT!!!2": "For more https://minecraft.wiki/w/Formatting_codes",
+  "tooltip.tutorialmod.magic_block.tooltip": "This Block is quite §9MAGICAL§r",
+
+  "tooltip.tutorialmod.chisel": "Press §eShift§r for more Information!",
+  "tooltip.tutorialmod.chisel.shift_down": "This Item changes certain Blocks",
+
+  "tooltip.tutorialmod.kohlrabi": "This tastes GREAT!!"
 }
