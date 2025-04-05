@@ -12,5 +12,7 @@
   "creativetab.tutorialmod.alexandrite_blocks": "Alexandrite Blocks",
 
   "item.tutorialmod.chisel": "Chisel",
-  "block.tutorialmod.magic_block": "Block of Magic"
+  "block.tutorialmod.magic_block": "Block of Magic",
+  "item.tutorialmod.kohlrabi": "Kohlrabi",
+  "item.tutorialmod.aurora_ashes": "Aurora Ashes"
 }
