@@ -1,6 +1,7 @@
 package net.jaybicov.tutorialmod.block.custom;
 
 import net.jaybicov.tutorialmod.item.ModItems;
+import net.jaybicov.tutorialmod.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
@@ -49,25 +50,38 @@ public class MagicBlock extends Block {
 
         if(pEntity instanceof ItemEntity itemEntity) // Is it item?
         {
-            if(itemEntity.getItem().getItem() == ModItems.RAW_ALEXANDRITE.get()) // The item is raw alexandrite?
+//            if(itemEntity.getItem().getItem() == ModItems.RAW_ALEXANDRITE.get()) // The item is raw alexandrite?
+//            {
+//                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+//                // Convert diamond
+//            }
+//
+//            if(itemEntity.getItem().getItem() == Items.FLINT) // The item is flint?
+//            {
+//                itemEntity.setItem(new ItemStack(ModItems.ALEXANDRITE.get(), itemEntity.getItem().getCount()));
+//                // Convert alexandrite
+//            }
+//
+//            if(itemEntity.getItem().getItem() == Items.RABBIT_FOOT) // The item is rabbit foot?
+//            {
+//                itemEntity.setItem(new ItemStack(Items.EMERALD, itemEntity.getItem().getCount()));
+//                // Convert emerald
+//            }
+
+            //For Custom Tags
+            if(isValidItem(itemEntity.getItem())) // If the item's tag is "TRANSFORMABLE_ITEMS"
             {
-                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+            itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
                 // Convert diamond
-            }
-
-            if(itemEntity.getItem().getItem() == Items.FLINT) // The item is flint?
-            {
-                itemEntity.setItem(new ItemStack(ModItems.ALEXANDRITE.get(), itemEntity.getItem().getCount()));
-                // Convert alexandrite
-            }
-
-            if(itemEntity.getItem().getItem() == Items.RABBIT_FOOT) // The item is rabbit foot?
-            {
-                itemEntity.setItem(new ItemStack(Items.EMERALD, itemEntity.getItem().getCount()));
-                // Convert emerald
             }
         }
         super.stepOn(pLevel, pPos, pState, pEntity);
+    }
+
+    // This method was added automatically for Custom Tags
+    private boolean isValidItem(ItemStack item)
+    {
+        return item.is(ModTags.Items.TRANSFORMABLE_ITEMS);
     }
 
 
