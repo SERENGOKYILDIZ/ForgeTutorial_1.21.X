@@ -21,5 +21,18 @@
   "tooltip.tutorialmod.chisel": "Daha fazla bilgi için §eShift§r tuşuna basın!",
   "tooltip.tutorialmod.chisel.shift_down": "Bu Alet belirli blokları değiştirir",
 
-  "tooltip.tutorialmod.kohlrabi": "Tadı harika!!"
+  "tooltip.tutorialmod.kohlrabi": "Tadı harika!!",
+
+  "block.tutorialmod.alexandrite_stairs": "Alexandrite Merdiven",
+  "block.tutorialmod.alexandrite_slab": "Alexandrite Basamak",
+
+  "block.tutorialmod.alexandrite_button": "Alexandrite Düğme",
+  "block.tutorialmod.alexandrite_pressure_plate": "Alexandrite Basma Plakası",
+
+  "block.tutorialmod.alexandrite_fence": "Alexandrite Çit",
+  "block.tutorialmod.alexandrite_fence_gate": "Alexandrite Çit Kapısı",
+  "block.tutorialmod.alexandrite_wall": "Alexandrite Duvar",
+
+  "block.tutorialmod.alexandrite_door": "Alexandrite Kapı",
+  "block.tutorialmod.alexandrite_trapdoor": "Alexandrite Tuzak Kapısı"
 }

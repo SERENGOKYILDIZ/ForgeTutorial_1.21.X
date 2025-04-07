@@ -45,6 +45,20 @@ public class ModCreativeModeTabs {
                                 pOutput.accept(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE.get());
 
                                 pOutput.accept(ModBlocks.MAGIC_BLOCK.get());
+
+                                // FOR NON-BLOCKS:
+                                pOutput.accept(ModBlocks.ALEXANDRITE_STAIRS.get());
+                                pOutput.accept(ModBlocks.ALEXANDRITE_SLAB.get());
+
+                                pOutput.accept(ModBlocks.ALEXANDRITE_PRESSURE_PLATE.get());
+                                pOutput.accept(ModBlocks.ALEXANDRITE_BUTTON.get());
+
+                                pOutput.accept(ModBlocks.ALEXANDRITE_FENCE.get());
+                                pOutput.accept(ModBlocks.ALEXANDRITE_FENCE_GATE.get());
+                                pOutput.accept(ModBlocks.ALEXANDRITE_WALL.get());
+
+                                pOutput.accept(ModBlocks.ALEXANDRITE_DOOR.get());
+                                pOutput.accept(ModBlocks.ALEXANDRITE_TRAPDOOR.get());
                             })
                             .build());
 
